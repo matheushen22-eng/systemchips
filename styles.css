@@ -1,0 +1,360 @@
+:root {
+    --cor-principal: #121212;
+    --cor-secundaria: #1f1f1f;
+    --cor-terceira:#2c2c2c ;
+    --cor-quarta:#3a3a3a ;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .servicos {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .servicos-img,
+    .servicos-info {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .servicos-img img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .servicos-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .servico-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+body  {
+    background-color: var(--cor-quarta);
+}
+
+h1 {
+    color: #f0f0f0;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: #f0f0f0;
+}
+
+p {
+    color: #f0f0f0;
+}
+.menu {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .menu a:hover {
+    background-color: rgb(170, 170, 170);
+    color: #000;
+    transform: scale(1.05);
+  }
+
+
+  
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 50%;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .banner-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .banner-content button {
+    background-color: #00c445;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .banner-content button:hover {
+    background-color: #00a938;
+  }
+  
+  .banner-image {
+    position: relative;
+    z-index: 1;
+    max-width: 45%;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 50px;
+    background-color: #111;
+    color: white;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .servicos-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .servicos-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .servicos-info {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .servicos-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .servicos-info p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .servico-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .servico-box.destaque {
+    background-color: #2b8ce6;
+    color: #000;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    min-width: 40px;
+    line-height: 1;
+  }
+  
+  .sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .imagem-sobre {
+    position: relative;
+    flex: 1 1 45%;
+    max-width: 600px;
+  }
+  
+  .imagem-sobre img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  
+  
+  .texto-sobre {
+    flex: 1 1 45%;
+    max-width: 600px;
+  }
+  
+  .texto-sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .texto-sobre p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .botao-verde {
+    display: inline-block;
+    background: #00c853;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .sobre-nos {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  
+    .icone-sobre {
+      right: 20px;
+      bottom: 20px;
+    }
+  
+    .texto-sobre h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .texto-sobre p {
+      text-align: justify;
+    }
+  
+    .botao-verde {
+      display: block;
+      margin: 20px auto 0;
+    }
+  }
+  
+  .mapa-localizacao {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .mapa-localizacao h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .mapa-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .mapa-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+  
+  /* Responsividade extra para telas menores */
+  @media (max-width: 600px) {
+    .mapa-wrapper iframe {
+      height: 300px;
+    }
+  }
+  
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+ 
+
+  
+  
+  
+  
